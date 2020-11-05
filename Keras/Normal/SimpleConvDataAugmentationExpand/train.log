@@ -1,0 +1,163 @@
+Using TensorFlow backend.
+2020-11-05 22:46:24.398597: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-11-05 22:46:24.413165: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-05 22:46:24.413544: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:06:00.0 name: GeForce GTX 1650 computeCapability: 7.5
+coreClock: 1.695GHz coreCount: 14 deviceMemorySize: 3.82GiB deviceMemoryBandwidth: 119.24GiB/s
+2020-11-05 22:46:24.413734: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-11-05 22:46:24.415055: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-11-05 22:46:24.416347: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-11-05 22:46:24.416563: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-11-05 22:46:24.417782: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-11-05 22:46:24.418519: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-11-05 22:46:24.420814: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-05 22:46:24.420991: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-05 22:46:24.421445: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-05 22:46:24.421765: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-11-05 22:46:24.527597: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-11-05 22:46:24.551293: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 3593150000 Hz
+2020-11-05 22:46:24.551901: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f9ddc000b20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-05 22:46:24.551931: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-11-05 22:46:24.818095: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-05 22:46:24.818465: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x563fed6bfd00 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-11-05 22:46:24.818482: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1650, Compute Capability 7.5
+2020-11-05 22:46:24.818641: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-05 22:46:24.818897: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:06:00.0 name: GeForce GTX 1650 computeCapability: 7.5
+coreClock: 1.695GHz coreCount: 14 deviceMemorySize: 3.82GiB deviceMemoryBandwidth: 119.24GiB/s
+2020-11-05 22:46:24.818945: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-11-05 22:46:24.818959: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-11-05 22:46:24.818980: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-11-05 22:46:24.818993: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-11-05 22:46:24.819003: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-11-05 22:46:24.819016: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-11-05 22:46:24.819029: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-05 22:46:24.819084: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-05 22:46:24.819385: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-05 22:46:24.819624: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-11-05 22:46:24.819653: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-11-05 22:46:24.820369: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-05 22:46:24.820380: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2020-11-05 22:46:24.820385: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2020-11-05 22:46:24.820472: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-05 22:46:24.820768: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-05 22:46:24.821033: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3533 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1650, pci bus id: 0000:06:00.0, compute capability: 7.5)
+2020-11-05 22:46:25.351039: I tensorflow/core/profiler/lib/profiler_session.cc:159] Profiler session started.
+2020-11-05 22:46:25.351110: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1363] Profiler found 1 GPUs
+2020-11-05 22:46:25.351317: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcupti.so.10.1'; dlerror: libcupti.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64
+2020-11-05 22:46:25.351334: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1408] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-11-05 22:46:25.351344: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1447] function cupti_interface_->ActivityRegisterCallbacks( AllocCuptiActivityBuffer, FreeCuptiActivityBuffer)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-11-05 22:46:25.351358: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1430] function cupti_interface_->EnableCallback( 0 , subscriber_, CUPTI_CB_DOMAIN_DRIVER_API, cbid)failed with error CUPTI could not be loaded or symbol could not be found.
+Epoch 1/200
+2020-11-05 22:46:27.660482: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-11-05 22:46:27.815918: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-05 22:46:28.754023: I tensorflow/stream_executor/cuda/cuda_driver.cc:763] failed to allocate 1.95G (2095448064 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2020-11-05 22:46:28.754314: I tensorflow/stream_executor/cuda/cuda_driver.cc:763] failed to allocate 1.76G (1885903360 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+
+ 1/46 [..............................] - ETA: 2:57 - loss: 2.2708 - accuracy: 0.15622020-11-05 22:46:30.803142: I tensorflow/core/profiler/lib/profiler_session.cc:159] Profiler session started.
+2020-11-05 22:46:30.803196: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1408] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-11-05 22:46:30.803216: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1447] function cupti_interface_->ActivityRegisterCallbacks( AllocCuptiActivityBuffer, FreeCuptiActivityBuffer)failed with error CUPTI could not be loaded or symbol could not be found.
+
+ 2/46 [>.............................] - ETA: 1:32 - loss: 1.9702 - accuracy: 0.35162020-11-05 22:46:31.057958: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1430] function cupti_interface_->EnableCallback( 0 , subscriber_, CUPTI_CB_DOMAIN_DRIVER_API, cbid)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-11-05 22:46:31.058107: I tensorflow/core/profiler/internal/gpu/device_tracer.cc:216]  GpuTracer has collected 0 callback api events and 0 activity events.
+2020-11-05 22:46:31.058858: I tensorflow/core/profiler/rpc/client/save_profile.cc:168] Creating directory: ./logs/train/plugins/profile/2020_11_05_22_46_31
+2020-11-05 22:46:31.059271: I tensorflow/core/profiler/rpc/client/save_profile.cc:174] Dumped gzipped tool data for trace.json.gz to ./logs/train/plugins/profile/2020_11_05_22_46_31/shouki.trace.json.gz
+2020-11-05 22:46:31.059490: I tensorflow/core/profiler/utils/event_span.cc:288] Generation of step-events took 0 ms
+
+2020-11-05 22:46:31.059917: I tensorflow/python/profiler/internal/profiler_wrapper.cc:87] Creating directory: ./logs/train/plugins/profile/2020_11_05_22_46_31Dumped tool data for overview_page.pb to ./logs/train/plugins/profile/2020_11_05_22_46_31/shouki.overview_page.pb
+Dumped tool data for input_pipeline.pb to ./logs/train/plugins/profile/2020_11_05_22_46_31/shouki.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to ./logs/train/plugins/profile/2020_11_05_22_46_31/shouki.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to ./logs/train/plugins/profile/2020_11_05_22_46_31/shouki.kernel_stats.pb
+
+
+ 3/46 [>.............................] - ETA: 1:03 - loss: 1.8496 - accuracy: 0.3750
+ 4/46 [=>............................] - ETA: 49s - loss: 1.7671 - accuracy: 0.3594 
+ 5/46 [==>...........................] - ETA: 44s - loss: 1.6981 - accuracy: 0.3636
+ 6/46 [==>...........................] - ETA: 37s - loss: 1.7680 - accuracy: 0.3933
+ 7/46 [===>..........................] - ETA: 33s - loss: 1.7241 - accuracy: 0.3954
+ 8/46 [====>.........................] - ETA: 29s - loss: 1.7629 - accuracy: 0.3816
+ 9/46 [====>.........................] - ETA: 26s - loss: 1.7459 - accuracy: 0.3769
+10/46 [=====>........................] - ETA: 24s - loss: 1.7001 - accuracy: 0.3836
+11/46 [======>.......................] - ETA: 22s - loss: 1.6607 - accuracy: 0.3966
+12/46 [======>.......................] - ETA: 20s - loss: 1.6361 - accuracy: 0.4087
+13/46 [=======>......................] - ETA: 18s - loss: 1.6289 - accuracy: 0.4214
+14/46 [========>.....................] - ETA: 17s - loss: 1.6140 - accuracy: 0.4238
+15/46 [========>.....................] - ETA: 16s - loss: 1.5926 - accuracy: 0.4259
+16/46 [=========>....................] - ETA: 15s - loss: 1.5794 - accuracy: 0.4267
+17/46 [==========>...................] - ETA: 14s - loss: 1.5626 - accuracy: 0.4176
+18/46 [==========>...................] - ETA: 13s - loss: 1.5491 - accuracy: 0.4161
+19/46 [===========>..................] - ETA: 12s - loss: 1.5417 - accuracy: 0.4164
+20/46 [============>.................] - ETA: 12s - loss: 1.5171 - accuracy: 0.4257
+21/46 [============>.................] - ETA: 11s - loss: 1.4959 - accuracy: 0.4348
+22/46 [=============>................] - ETA: 10s - loss: 1.4884 - accuracy: 0.4401
+23/46 [==============>...............] - ETA: 9s - loss: 1.4797 - accuracy: 0.4414 
+24/46 [==============>...............] - ETA: 9s - loss: 1.4664 - accuracy: 0.4493
+25/46 [===============>..............] - ETA: 8s - loss: 1.4530 - accuracy: 0.4553
+26/46 [===============>..............] - ETA: 8s - loss: 1.4369 - accuracy: 0.4577
+27/46 [================>.............] - ETA: 7s - loss: 1.4261 - accuracy: 0.4587
+28/46 [=================>............] - ETA: 7s - loss: 1.4175 - accuracy: 0.4597
+29/46 [=================>............] - ETA: 6s - loss: 1.4001 - accuracy: 0.4650
+30/46 [==================>...........] - ETA: 6s - loss: 1.3856 - accuracy: 0.4678
+31/46 [===================>..........] - ETA: 5s - loss: 1.3671 - accuracy: 0.4715
+32/46 [===================>..........] - ETA: 5s - loss: 1.3589 - accuracy: 0.4764
+33/46 [====================>.........] - ETA: 4s - loss: 1.3515 - accuracy: 0.4776
+34/46 [=====================>........] - ETA: 4s - loss: 1.3497 - accuracy: 0.4774
+35/46 [=====================>........] - ETA: 4s - loss: 1.3422 - accuracy: 0.4812
+36/46 [======================>.......] - ETA: 3s - loss: 1.3347 - accuracy: 0.4827
+37/46 [=======================>......] - ETA: 3s - loss: 1.3298 - accuracy: 0.4849
+38/46 [=======================>......] - ETA: 2s - loss: 1.3254 - accuracy: 0.4848
+39/46 [========================>.....] - ETA: 2s - loss: 1.3214 - accuracy: 0.4852
+40/46 [=========================>....] - ETA: 2s - loss: 1.3106 - accuracy: 0.4916
+41/46 [=========================>....] - ETA: 1s - loss: 1.3077 - accuracy: 0.4930
+42/46 [==========================>...] - ETA: 1s - loss: 1.3018 - accuracy: 0.4954
+43/46 [===========================>..] - ETA: 1s - loss: 1.2899 - accuracy: 0.5015
+44/46 [===========================>..] - ETA: 0s - loss: 1.2793 - accuracy: 0.5065
+45/46 [============================>.] - ETA: 0s - loss: 1.2724 - accuracy: 0.5081
+46/46 [==============================] - 17s 373ms/step - loss: 1.2655 - accuracy: 0.5114 - val_loss: 1.5730 - val_accuracy: 0.5429
+Epoch 2/200
+
+ 1/46 [..............................] - ETA: 11s - loss: 0.8784 - accuracy: 0.6250
+ 2/46 [>.............................] - ETA: 11s - loss: 0.8686 - accuracy: 0.6328
+ 3/46 [>.............................] - ETA: 10s - loss: 0.9933 - accuracy: 0.5990
+ 4/46 [=>............................] - ETA: 10s - loss: 0.9825 - accuracy: 0.5938
+ 5/46 [==>...........................] - ETA: 10s - loss: 1.0007 - accuracy: 0.5875
+ 6/46 [==>...........................] - ETA: 10s - loss: 0.9823 - accuracy: 0.5885
+ 7/46 [===>..........................] - ETA: 9s - loss: 0.9882 - accuracy: 0.5893 
+ 8/46 [====>.........................] - ETA: 9s - loss: 1.0091 - accuracy: 0.5859
+ 9/46 [====>.........................] - ETA: 9s - loss: 1.0122 - accuracy: 0.5868
+10/46 [=====>........................] - ETA: 9s - loss: 1.0051 - accuracy: 0.5922
+11/46 [======>.......................] - ETA: 8s - loss: 1.0122 - accuracy: 0.5923
+12/46 [======>.......................] - ETA: 8s - loss: 1.0139 - accuracy: 0.5898
+13/46 [=======>......................] - ETA: 8s - loss: 1.0098 - accuracy: 0.5877
+14/46 [========>.....................] - ETA: 8s - loss: 0.9992 - accuracy: 0.5960
+15/46 [========>.....................] - ETA: 7s - loss: 0.9957 - accuracy: 0.5969
+16/46 [=========>....................] - ETA: 7s - loss: 1.0006 - accuracy: 0.5918
+17/46 [==========>...................] - ETA: 7s - loss: 0.9953 - accuracy: 0.5947
+18/46 [==========>...................] - ETA: 7s - loss: 0.9870 - accuracy: 0.5946
+19/46 [===========>..................] - ETA: 6s - loss: 0.9844 - accuracy: 0.5913
+20/46 [============>.................] - ETA: 6s - loss: 0.9753 - accuracy: 0.5891
+21/46 [============>.................] - ETA: 6s - loss: 0.9676 - accuracy: 0.5893
+22/46 [=============>................] - ETA: 6s - loss: 0.9743 - accuracy: 0.5859
+23/46 [==============>...............] - ETA: 5s - loss: 0.9760 - accuracy: 0.5829
+24/46 [==============>...............] - ETA: 5s - loss: 0.9743 - accuracy: 0.5801
+25/46 [===============>..............] - ETA: 5s - loss: 0.9714 - accuracy: 0.5819
+26/46 [===============>..............] - ETA: 5s - loss: 0.9638 - accuracy: 0.5853
+27/46 [================>.............] - ETA: 4s - loss: 0.9668 - accuracy: 0.5868
+28/46 [=================>............] - ETA: 4s - loss: 0.9661 - accuracy: 0.5893
+29/46 [=================>............] - ETA: 4s - loss: 0.9789 - accuracy: 0.5857
+30/46 [==================>...........] - ETA: 4s - loss: 0.9799 - accuracy: 0.5880
+31/46 [===================>..........] - ETA: 3s - loss: 0.9782 - accuracy: 0.5897
+32/46 [===================>..........] - ETA: 3s - loss: 0.9774 - accuracy: 0.5923
+33/46 [====================>.........] - ETA: 3s - loss: 0.9777 - accuracy: 0.5947
+34/46 [=====================>........] - ETA: 3s - loss: 0.9787 - accuracy: 0.5965
+35/46 [=====================>........] - ETA: 2s - loss: 0.9769 - accuracy: 0.5982
+36/46 [======================>.......] - ETA: 2s - loss: 0.9728 - accuracy: 0.5985
+37/46 [=======================>......] - ETA: 2s - loss: 0.9726 - accuracy: 0.5976
+38/46 [=======================>......] - ETA: 2s - loss: 0.9705 - accuracy: 0.5975
+39/46 [========================>.....] - ETA: 1s - loss: 0.9705 - accuracy: 0.5974
+40/46 [=========================>....] - ETA: 1s - loss: 0.9691 - accuracy: 0.5969
+41/46 [=========================>....] - ETA: 1s - loss: 0.9656 - accuracy: 0.5979
+42/46 [==========================>...] - ETA: 1s - loss: 0.9618 - accuracy: 0.5993
+43/46 [===========================>..] - ETA: 0s - loss: 0.9608 - accuracy: 0.6014
+44/46 [===========================>..] - ETA: 0s - loss: 0.9630 - accuracy: 0.6019
+45/46 [============================>.] - ETA: 0s - loss: 0.9618 - accuracy: 0.6038
