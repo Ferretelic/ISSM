@@ -24,8 +24,8 @@ callbacks = [
 
 model_history = model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size, callbacks=callbacks, validation_split=0.2)
 
-model.save("./models/FinalCNN.h5")
+model.save("./models/model_final.h5")
 history = model_history.history
 
-with open("./model_history.pkl", "wb") as f:
+with open("./history/model_history.pkl", "wb") as f:
   pickle.dump(history, f)
