@@ -10,7 +10,7 @@ tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 x_test, test_ids = load_test_dataset()
 
-model = load_model("./models/FinalCNN.h5")
+model = load_model("./models/model_final.h5")
 predictions = np.argmax(model.predict(    x_test), axis=1)
 
 submission = np.empty((predictions.shape[0]))
