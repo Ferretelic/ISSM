@@ -27,5 +27,5 @@ model_history = model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size
 model.save("./models/FinalCNN.h5")
 history = model_history.history
 
-with open("./history/model_history.pkl", "wb") as f:
+with open("./model_history.pkl", "wb") as f:
   pickle.dump(history, f)

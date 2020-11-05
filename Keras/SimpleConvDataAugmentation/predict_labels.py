@@ -10,7 +10,7 @@ tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 x_test, test_ids = load_test_dataset()
 
-model = load_model("./models/model_50.h5")
+model = load_model("./models/FinalCNN.h5")
 predictions = np.argmax(model.predict(    x_test), axis=1)
 
 submission = np.empty((predictions.shape[0]))
@@ -20,4 +20,4 @@ for label, image_id in zip(predictions, test_ids):
 
 submission_csv = pd.read_csv("/home/shouki/Desktop/Programming/Python/AI/Datasets/ImageData/ISSM/sampleSolution.csv")
 submission_csv["LABEL"] = np.array(submission, dtype=np.int32)
-submission_csv.to_csv("./submission/submission_50.csv", index=False)
+submission_csv.to_csv("./submission/submission.csv", index=False)
