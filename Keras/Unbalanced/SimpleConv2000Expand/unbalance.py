@@ -30,7 +30,7 @@ def over_sampling(images, labels, sample):
 
   return generated_images, labels
 
-def regulation_dataset(classes=10, sample=1000):
+def regulation_dataset(sample, classes=10):
   x_train, y_train = load_train_dataset()
 
   all_image_counts = sample * classes
@@ -55,8 +55,29 @@ def regulation_dataset(classes=10, sample=1000):
 
   dataset_path = "/home/shouki/Desktop/Programming/Python/AI/Datasets/ImageData/ISSM/"
 
-  with open(os.path.join(dataset_path, "regulized_train_images.pkl"), "wb") as f:
+  with open(os.path.join(dataset_path, "regulized_train_images_{}.pkl".format(sample)), "wb") as f:
     pickle.dump(all_images, f)
 
-  with open(os.path.join(dataset_path, "regulized_train_labels.pkl"), "wb") as f:
+  with open(os.path.join(dataset_path, "regulized_train_labels_{}.pkl".format(sample)), "wb") as f:
     pickle.dump(all_labels, f)
+
+
+def load_regulized_train_dataset(sample):
+  dataset_path = "/home/shouki/Desktop/Programming/Python/AI/Datasets/ImageData/ISSM/"
+
+  if os.path.exists(os.path.join(dataset_path, "regulized_train_images_{}.pkl".format(sample))) == False:
+    regulation_dataset(sample)
+
+  with open(os.path.join(dataset_path, "regulized_train_images_{}.pkl".format(sample)), "rb") as f:
+    x_train = pickle.load(f)
+
+  with open(os.path.join(dataset_path, "regulized_train_labels_{}.pkl".format(sample)), "rb") as f:
+    y_train = pickle.load(f)
+
+  train_index = np.arange(0, y_train.shape[0])
+  np.random.shuffle(train_index)
+
+  x_train = x_train[train_index]
+  y_train = y_train[train_index]
+
+  return x_train, y_train

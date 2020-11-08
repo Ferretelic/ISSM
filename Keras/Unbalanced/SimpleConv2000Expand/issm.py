@@ -71,20 +71,3 @@ def load_train_dataset():
   y_train = y_train[train_index]
 
   return x_train, y_train
-
-def load_regulized_train_dataset():
-  dataset_path = "/home/shouki/Desktop/Programming/Python/AI/Datasets/ImageData/ISSM/"
-
-  with open(os.path.join(dataset_path, "regulized_train_images.pkl"), "rb") as f:
-    x_train = pickle.load(f)
-
-  with open(os.path.join(dataset_path, "regulized_train_labels.pkl"), "rb") as f:
-    y_train = pickle.load(f)
-
-  train_index = np.arange(0, y_train.shape[0])
-  np.random.shuffle(train_index)
-
-  x_train = x_train[train_index]
-  y_train = y_train[train_index]
-
-  return x_train, y_train
