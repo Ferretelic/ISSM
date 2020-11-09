@@ -23,4 +23,5 @@ def create_submission_file(epoch):
   submission_csv["LABEL"] = np.array(submission, dtype=np.int32)
   submission_csv.to_csv("./submission/submission_{}.csv".format(epoch), index=False)
 
-create_submission_file("160")
+for epoch in ["50", "100", "150", "final"]:
+  create_submission_file(epoch)
