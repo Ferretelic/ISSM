@@ -2,7 +2,7 @@ from unbalance import load_regulized_train_dataset
 import numpy as np
 import matplotlib.pyplot as plt
 
-x_trian, y_train = load_regulized_train_dataset(1000)
+x_trian, y_train = load_regulized_train_dataset(2000)
 
 unique, count = np.unique(y_train, return_counts=True)
 
