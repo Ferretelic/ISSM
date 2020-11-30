@@ -35,7 +35,7 @@ def ensemble_models(models, id):
   submission_csv["LABEL"] = np.array(submission, dtype=np.int32)
   submission_csv.to_csv("./submission/submission_{}.csv".format(id), index=False)
 
-ensemble_id = "1"
+ensemble_id = "3"
 with open("./submission/submissions.json", "r") as f:
   models = json.load(f)[ensemble_id]
 
