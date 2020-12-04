@@ -28,5 +28,23 @@
     ["Model20000Size64", "175"],
     ["FineTuningVGG16Size64", "100"],
     ["FineTuningVGG16TrainAbleSize64", "08"]
+  ],
+  "4": [
+    ["Model5000Size64", "100"],
+    ["Model10000Size64", "150"],
+    ["Model10000Size72", "75"],
+    ["Model15000Size64", "50"],
+    ["Model20000Size64", "175"],
+    ["Model20000BatchSize64", "25"]
+  ],
+  "5": [
+    ["Model5000Size64", "100"],
+    ["Model10000Size64", "150"],
+    ["Model10000Size72", "75"],
+    ["Model15000Size64", "50"],
+    ["Model20000Size64", "175"],
+    ["Model20000BatchSize64", "25"],
+    ["FineTuningVGG16Size64", "100"],
+    ["FineTuningVGG16TrainAbleSize64", "08"]
   ]
 }
